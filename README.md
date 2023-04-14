@@ -32,7 +32,33 @@ I used stable diffusion to generate images of our character. It's like taking a 
 Now, here's where things get really interesting. We start by generating 400 images of our character from different angles and focuses.
 
 
-| *prompt: An extreme closeup front shot photo of a beautiful 25yo Scotland woman (freckled face_1.2) with defined cheekbones, a straight nose, full lips, hazel eyes, chin dimple, square jaw, plucked eyebrows, red curly long hair, (neutral gray background:1.3), neutral face expression* |
+### Settings:
+
+|*Prompt: An extreme closeup front shot photo of a beautiful 25yo Scotland woman (freckled face_1.2) with defined cheekbones, a straight nose, full lips, hazel eyes, chin dimple, square jaw, plucked eyebrows, red curly long hair, (neutral gray background:1.3), neutral face expression*|
+
+|*Negative Prompt: (gray hair:1.3), (glasses:1.2), (earrings:1.2), (necklace:1.2), (high heels:1.2), young, loli, teen, child, (deformed, distorted, disfigured:1.3), poorly drawn, bad anatomy, wrong anatomy, extra limb, missing limb, floating limbs, (mutated hands and fingers:1.4), disconnected limbs, mutation, mutated, ugly, disgusting, blurry, amputation, tattoo*|
+
+Sampling method: DPM++ 2M Karras
+Sampling steps: 30
+Restore Faces: On
+Tiling: Off
+Hires. fix: Off
+Width: 512
+Height: 512
+CFG Scale: 7
+Seed: -1
+
+Now let's spice up your character variations with some different angles and zoom levels! Head to the Script menu and select X/Y/Z Plot. In X values, copy and paste these five zoom levels:
+
+extreme closeup, medium closeup, closeup, medium shot, and full body
+
+This will give you images of your character from different distances. In Y values, copy and paste these five viewing angles:
+
+front shot, rear angle, side angle, shot from above, and low angle shot.
+
+Now that you've told the AI to generate 25 different versions of your character to choose from for training. Make sure to check "Keep -1 for seeds" and set Batch Count and Batch Size to 4 (or 2 and 8 if your GPU is feeling feisty). Let the AI work its magic and generate 16 images for every permutation of angles and zoom levels. Your character is about to become the most versatile one out there!
+
+It's time to name our character for the tagging - we'll call her 3m1ly. Make sure the name is unique, so we can train the AI to recognize her specifically. Keep it short and sweet - just one word, without any spaces. We don't want the AI getting confused with other tokens that already have a meaning.
 
 ![xyz_grid-0000-997563325-an extreme closeup front shot photo of a beautiful 25yo Scotland woman (freckled face_1 2) with defined cheekbones, a straight n, ](https://user-images.githubusercontent.com/88194731/231701063-72fde37c-98ea-48bb-91f5-24fcf83bcb11.jpg)
 
